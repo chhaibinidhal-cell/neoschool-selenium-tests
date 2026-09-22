@@ -1,17 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-22T11:14:31 GMT+01:00" name="Default suite" finished-at="2026-09-22T11:14:46 GMT+01:00" duration-ms="14915">
+  <suite started-at="2026-09-22T22:44:57 GMT+01:00" name="Default suite" finished-at="2026-09-22T22:45:09 GMT+01:00" duration-ms="12218">
     <groups>
+      <group name="TC01">
+        <method signature="TC_01_Tester_la_connexion_avec_des_informations_valides.testerLaConnexionAvecDesInformationsValides()[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@37afeb11]" name="testerLaConnexionAvecDesInformationsValides" class="tests.TC_01_Tester_la_connexion_avec_des_informations_valides"/>
+      </group> <!-- TC01 -->
     </groups>
-    <test started-at="2026-09-22T11:14:31 GMT+01:00" name="Default test" finished-at="2026-09-22T11:14:46 GMT+01:00" duration-ms="14915">
-      <class name="tests.TC_01_Tester_la_connexion_avec_des_informations_valides">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@7ec7ffd3]" started-at="2026-09-22T11:14:30 GMT+01:00" name="beforeSuite" finished-at="2026-09-22T11:14:31 GMT+01:00" duration-ms="261" status="PASS">
+    <test started-at="2026-09-22T22:44:57 GMT+01:00" name="Default test" finished-at="2026-09-22T22:45:09 GMT+01:00" duration-ms="12218">
+      <class name="tests.TC_02_Tester_la_création_année_académique">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421]" started-at="2026-09-22T22:44:57 GMT+01:00" name="beforeSuite" finished-at="2026-09-22T22:44:57 GMT+01:00" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@7ec7ffd3]" started-at="2026-09-22T11:14:31 GMT+01:00" name="setUp" finished-at="2026-09-22T11:14:43 GMT+01:00" duration-ms="12414" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421]" started-at="2026-09-22T22:45:01 GMT+01:00" name="setUp" finished-at="2026-09-22T22:45:03 GMT+01:00" duration-ms="2142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.TC_02_Tester_la_création_année_académique.testerLaGestionDesAnneesAcademiques()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testerLaGestionDesAnneesAcademiques()[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421]" started-at="2026-09-22T22:45:03 GMT+01:00" name="testerLaGestionDesAnneesAcademiques" depends-on-groups="TC01" finished-at="2026-09-22T22:45:09 GMT+01:00" duration-ms="5914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testerLaGestionDesAnneesAcademiques -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421]" started-at="2026-09-22T22:45:09 GMT+01:00" name="tearDown" finished-at="2026-09-22T22:45:09 GMT+01:00" duration-ms="136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testerLaGestionDesAnneesAcademiques status=SUCCESS method=TC_02_Tester_la_création_année_académique.testerLaGestionDesAnneesAcademiques()[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421]" started-at="2026-09-22T22:45:09 GMT+01:00" name="afterSuite" finished-at="2026-09-22T22:45:09 GMT+01:00" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- tests.TC_02_Tester_la_création_année_académique -->
+      <class name="tests.TC_01_Tester_la_connexion_avec_des_informations_valides">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@37afeb11]" started-at="2026-09-22T22:44:57 GMT+01:00" name="setUp" finished-at="2026-09-22T22:44:59 GMT+01:00" duration-ms="2317" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,25 +57,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testerLaConnexionAvecDesInformationsValides()[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@7ec7ffd3]" started-at="2026-09-22T11:14:43 GMT+01:00" name="testerLaConnexionAvecDesInformationsValides" finished-at="2026-09-22T11:14:45 GMT+01:00" duration-ms="2222" status="PASS">
+        <test-method signature="testerLaConnexionAvecDesInformationsValides()[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@37afeb11]" started-at="2026-09-22T22:44:59 GMT+01:00" name="testerLaConnexionAvecDesInformationsValides" finished-at="2026-09-22T22:45:00 GMT+01:00" duration-ms="1469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testerLaConnexionAvecDesInformationsValides -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@7ec7ffd3]" started-at="2026-09-22T11:14:45 GMT+01:00" name="tearDown" finished-at="2026-09-22T11:14:46 GMT+01:00" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@37afeb11]" started-at="2026-09-22T22:45:00 GMT+01:00" name="tearDown" finished-at="2026-09-22T22:45:01 GMT+01:00" duration-ms="192" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testerLaConnexionAvecDesInformationsValides status=SUCCESS method=TC_01_Tester_la_connexion_avec_des_informations_valides.testerLaConnexionAvecDesInformationsValides()[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@7ec7ffd3] output={null}]]]>
+                <![CDATA[[TestResult name=testerLaConnexionAvecDesInformationsValides status=SUCCESS method=TC_01_Tester_la_connexion_avec_des_informations_valides.testerLaConnexionAvecDesInformationsValides()[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@37afeb11] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@7ec7ffd3]" started-at="2026-09-22T11:14:46 GMT+01:00" name="afterSuite" finished-at="2026-09-22T11:14:46 GMT+01:00" duration-ms="250" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
       </class> <!-- tests.TC_01_Tester_la_connexion_avec_des_informations_valides -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

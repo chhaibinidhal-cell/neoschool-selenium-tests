@@ -24,7 +24,7 @@ import java.lang.reflect.Method;
 
 public class BaseTest {
     protected WebDriver driver;
-    protected  ExtentReports extent;
+    protected static ExtentReports extent;
     protected ExtentTest test;
     protected final String baseUrl =
             "https://app.neoschool.innoteam.tn/neoschool";
