@@ -9,7 +9,7 @@ import pages.loginPage;
 
 public class TC_01_Tester_la_connexion_avec_des_informations_valides extends BaseTest {
 	
-	@Test(groups = "TC01")
+	@Test
 	public void testerLaConnexionAvecDesInformationsValides() {
 		loginPage Login = new loginPage(driver);
 		DashboardPage Dashboard = new DashboardPage(driver);

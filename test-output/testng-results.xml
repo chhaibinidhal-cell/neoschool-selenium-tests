@@ -1,78 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-22T22:44:57 GMT+01:00" name="Default suite" finished-at="2026-09-22T22:45:09 GMT+01:00" duration-ms="12218">
+  <suite started-at="2026-09-23T14:31:02 GMT+01:00" name="Default suite" finished-at="2026-09-23T14:31:09 GMT+01:00" duration-ms="7243">
     <groups>
-      <group name="TC01">
-        <method signature="TC_01_Tester_la_connexion_avec_des_informations_valides.testerLaConnexionAvecDesInformationsValides()[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@37afeb11]" name="testerLaConnexionAvecDesInformationsValides" class="tests.TC_01_Tester_la_connexion_avec_des_informations_valides"/>
-      </group> <!-- TC01 -->
     </groups>
-    <test started-at="2026-09-22T22:44:57 GMT+01:00" name="Default test" finished-at="2026-09-22T22:45:09 GMT+01:00" duration-ms="12218">
-      <class name="tests.TC_02_Tester_la_création_année_académique">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421]" started-at="2026-09-22T22:44:57 GMT+01:00" name="beforeSuite" finished-at="2026-09-22T22:44:57 GMT+01:00" duration-ms="111" status="PASS">
+    <test started-at="2026-09-23T14:31:02 GMT+01:00" name="Default test" finished-at="2026-09-23T14:31:09 GMT+01:00" duration-ms="7243">
+      <class name="tests.TC09_Sélectionner_une_année_académique_courante">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.TC09_Sélectionner_une_année_académique_courante@7ec7ffd3]" started-at="2026-09-23T14:31:01 GMT+01:00" name="beforeSuite" finished-at="2026-09-23T14:31:02 GMT+01:00" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421]" started-at="2026-09-22T22:45:01 GMT+01:00" name="setUp" finished-at="2026-09-22T22:45:03 GMT+01:00" duration-ms="2142" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.TC09_Sélectionner_une_année_académique_courante@7ec7ffd3]" started-at="2026-09-23T14:31:02 GMT+01:00" name="setUp" finished-at="2026-09-23T14:31:04 GMT+01:00" duration-ms="2321" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.TC_02_Tester_la_création_année_académique.testerLaGestionDesAnneesAcademiques()]]>
+                <![CDATA[public void tests.TC09_Sélectionner_une_année_académique_courante.testerLaSélectionUneAnnéeAcadémiqueCourante()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testerLaGestionDesAnneesAcademiques()[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421]" started-at="2026-09-22T22:45:03 GMT+01:00" name="testerLaGestionDesAnneesAcademiques" depends-on-groups="TC01" finished-at="2026-09-22T22:45:09 GMT+01:00" duration-ms="5914" status="PASS">
+        <test-method signature="testerLaSélectionUneAnnéeAcadémiqueCourante()[pri:0, instance:tests.TC09_Sélectionner_une_année_académique_courante@7ec7ffd3]" started-at="2026-09-23T14:31:04 GMT+01:00" name="testerLaSélectionUneAnnéeAcadémiqueCourante" finished-at="2026-09-23T14:31:09 GMT+01:00" duration-ms="4665" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testerLaGestionDesAnneesAcademiques -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421]" started-at="2026-09-22T22:45:09 GMT+01:00" name="tearDown" finished-at="2026-09-22T22:45:09 GMT+01:00" duration-ms="136" status="PASS">
+        </test-method> <!-- testerLaSélectionUneAnnéeAcadémiqueCourante -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TC09_Sélectionner_une_année_académique_courante@7ec7ffd3]" started-at="2026-09-23T14:31:09 GMT+01:00" name="tearDown" finished-at="2026-09-23T14:31:09 GMT+01:00" duration-ms="222" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testerLaGestionDesAnneesAcademiques status=SUCCESS method=TC_02_Tester_la_création_année_académique.testerLaGestionDesAnneesAcademiques()[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421] output={null}]]]>
+                <![CDATA[[TestResult name=testerLaSélectionUneAnnéeAcadémiqueCourante status=SUCCESS method=TC09_Sélectionner_une_année_académique_courante.testerLaSélectionUneAnnéeAcadémiqueCourante()[pri:0, instance:tests.TC09_Sélectionner_une_année_académique_courante@7ec7ffd3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.TC_02_Tester_la_création_année_académique@6572421]" started-at="2026-09-22T22:45:09 GMT+01:00" name="afterSuite" finished-at="2026-09-22T22:45:09 GMT+01:00" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.TC09_Sélectionner_une_année_académique_courante@7ec7ffd3]" started-at="2026-09-23T14:31:09 GMT+01:00" name="afterSuite" finished-at="2026-09-23T14:31:09 GMT+01:00" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- tests.TC_02_Tester_la_création_année_académique -->
-      <class name="tests.TC_01_Tester_la_connexion_avec_des_informations_valides">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@37afeb11]" started-at="2026-09-22T22:44:57 GMT+01:00" name="setUp" finished-at="2026-09-22T22:44:59 GMT+01:00" duration-ms="2317" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.TC_01_Tester_la_connexion_avec_des_informations_valides.testerLaConnexionAvecDesInformationsValides()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testerLaConnexionAvecDesInformationsValides()[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@37afeb11]" started-at="2026-09-22T22:44:59 GMT+01:00" name="testerLaConnexionAvecDesInformationsValides" finished-at="2026-09-22T22:45:00 GMT+01:00" duration-ms="1469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testerLaConnexionAvecDesInformationsValides -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@37afeb11]" started-at="2026-09-22T22:45:00 GMT+01:00" name="tearDown" finished-at="2026-09-22T22:45:01 GMT+01:00" duration-ms="192" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testerLaConnexionAvecDesInformationsValides status=SUCCESS method=TC_01_Tester_la_connexion_avec_des_informations_valides.testerLaConnexionAvecDesInformationsValides()[pri:0, instance:tests.TC_01_Tester_la_connexion_avec_des_informations_valides@37afeb11] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.TC_01_Tester_la_connexion_avec_des_informations_valides -->
+      </class> <!-- tests.TC09_Sélectionner_une_année_académique_courante -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

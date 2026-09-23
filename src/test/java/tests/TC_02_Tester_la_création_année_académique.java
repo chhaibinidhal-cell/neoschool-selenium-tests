@@ -1,7 +1,5 @@
 package tests;
 
-import static org.testng.Assert.assertTrue;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,7 +11,7 @@ import pages.newAcademicYearsPage;
 
 public class TC_02_Tester_la_création_année_académique extends BaseTest {
 
-	@Test(dependsOnGroups = "TC01")
+	@Test
 	public void testerLaGestionDesAnneesAcademiques() {
 		
 		loginPage Login = new loginPage(driver);
