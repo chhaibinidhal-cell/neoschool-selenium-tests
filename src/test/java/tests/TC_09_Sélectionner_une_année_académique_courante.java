@@ -8,7 +8,7 @@ import pages.DashboardPage;
 import pages.academicYearsPage;
 import pages.loginPage;
 
-public class TC09_Sélectionner_une_année_académique_courante extends BaseTest {
+public class TC_09_Sélectionner_une_année_académique_courante extends BaseTest {
 
 	@Test
 	
@@ -32,7 +32,7 @@ public class TC09_Sélectionner_une_année_académique_courante extends BaseTest
 		Assert.assertTrue(academicYearsPageTitleResult, "La page Academic Years doit ètre affiché");
 		
 		test.info("Cliquer sur set as current");
-		academicYears.clickOnSetAsCurrent();
+		academicYears.clickOnSetAsCurrent("2026/2027");
 		
 		test.info("Vérifier que la fenètre s'affiche");
 		boolean modalWindowIsDisplayedResult = academicYears.isModalWindowDisplayed();

@@ -18,18 +18,20 @@ public class DashboardPage {
 	
 	private final By DashboardPageTitle = By.xpath("//h1[normalize-space()='Admin Dashboard']");
 	private final By AcademicYearsMenu = By.xpath("//span[normalize-space()='Academic Years']");
+	private final By TermsMenu = By.xpath("//span[normalize-space()='Terms']");
 
-
-	//public String getDashboardPageTitle() {
-		//return wait.until(ExpectedConditions.visibilityOfElementLocated(DashboardPageTitle)).getText();
-	//}
+	
 	
 	public boolean isOnDashboard() {
 		String dashboardPageTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(DashboardPageTitle)).getText();
 		return dashboardPageTitle.contains("Dashboard");
 	}
+	
 	public void clickOnAcademicYearsMenu() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(AcademicYearsMenu)).click();
 	}
 	
+	public void clickOnTermsMenu() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(TermsMenu)).click();
+	}
 }

@@ -44,7 +44,7 @@ public class TC_02_Tester_la_création_année_académique extends BaseTest {
 		newAcademicYears.clickOnAdditionalLabelsAcademicYear();
 		
 		test.info("Choisir la nouvelle année académique");
-		newAcademicYears.clickOnAcademicYearChoice();
+		newAcademicYears.clickOnAcademicYearChoice("2026/2027");
 		
 		test.info("Saisir les détails de la nouvelle année académique");
 		String Details = "Année académique couvrant les deux semestres avec les périodes d'examens et les activités pédagogiques.";

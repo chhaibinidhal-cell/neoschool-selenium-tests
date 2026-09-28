@@ -22,13 +22,14 @@ public class academicYearsPage {
 	private final By academicYearsPageTitle = By.xpath("//h1[normalize-space()='Academic Years']");
 	private final By newAcademicYearsButton = By.xpath("//span[normalize-space()='New Academic Years']");
 	private final By academicYearRows = By.xpath("//tr[contains(@class,'fi-ta-row')]");
-	private final By setAsCurrentButton = By.xpath("(//span[contains(text(),'Set as Current')])[1]");
+	//private final By setAsCurrentButton = By.xpath("(//span[contains(text(),'Set as Current')])[1]");
 	private final By modalWindow = By.xpath("//div[@class='fi-modal-header flex px-6 pt-6 flex-col']");
 	private final By confirmButton = By.xpath("//span[normalize-space()='Confirm']");
 	private final By confirmationMessage = By.xpath("//div[contains(@class,'flex w-full gap-3 p-4')]");
 	//private final By banner = By.xpath("(//*[contains(text(),\"working in the Current Academic Year\")])[1]");
 	private final By banner = By.xpath("//div[@class='hidden lg:block']//div//div[@class='w-full text-center p-2 bg-green-400 rounded']");
-	
+	private final By dashboardMenu = By.xpath("//span[normalize-space()='Dashboard']");
+
 
 	public boolean isOnAcademicYears() {
 		String AcademicYearsPageTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(academicYearsPageTitle)).getText();
@@ -52,8 +53,13 @@ public class academicYearsPage {
 	    return false;
 	}
 	
-	public void clickOnSetAsCurrent() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(setAsCurrentButton)).click();
+	//public void clickOnSetAsCurrent() {
+	//	wait.until(ExpectedConditions.visibilityOfElementLocated(setAsCurrentButton)).click();
+	//}
+	
+	public void clickOnSetAsCurrent(String academicYear) {
+	    By button = By.xpath("//tr[contains(@class,'fi-ta-row') and contains(.,'" + academicYear + "')]//span[normalize-space()='Set as Current']");
+	    wait.until(ExpectedConditions.elementToBeClickable(button)).click();
 	}
 	
 	public boolean isModalWindowDisplayed(){
@@ -85,6 +91,8 @@ public class academicYearsPage {
 		return isOnTop;
 	}
 	
-
+	public void clickOnDashboard() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardMenu)).click();
+	}
 	
 }

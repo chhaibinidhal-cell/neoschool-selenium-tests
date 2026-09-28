@@ -18,11 +18,11 @@ public class newAcademicYearsPage {
 	}
 	private final By newAcademicYearsTitle = By.xpath("//h1[normalize-space()='Create Academic Years']");
 	private final By additionalLabelsAcademicYear = By.xpath("//div[@class='choices__inner']");
-	private final By academicYearChoice = By.xpath("//div[@id='choices--dataname-item-choice-3']");
+	//private final By academicYearChoice = By.xpath("//div[@id='choices--dataname-item-choice-3']");
 	private final By additionalLabelsDetails = By.xpath("//textarea[@id='data.description']");
 	private final By startDateField = By.xpath("//input[@id='data.starts_at']");
 	private final By endDateField = By.xpath("//input[@id='data.ends_at']");
-	private final By createButton = By.xpath("//span[contains(@class,'fi-btn-label')][normalize-space()='Create']");
+	private final By createButton = By.xpath("//button[@id='key-bindings-1']");
 	private final By confirmationMessage = By.xpath("//h3[normalize-space()='Academic Year has been created successfully !']");
 
 	
@@ -35,8 +35,13 @@ public class newAcademicYearsPage {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(additionalLabelsAcademicYear)).click();
 	}
 	
-	public void clickOnAcademicYearChoice() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(academicYearChoice)).click();
+	//public void clickOnAcademicYearChoice() {
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(academicYearChoice)).click();
+	//}
+	
+	public void clickOnAcademicYearChoice(String academicYear) {
+	    By choice = By.xpath("//div[contains(@class,'choices__item') and normalize-space()='" + academicYear + "']");
+	    wait.until(ExpectedConditions.elementToBeClickable(choice)).click();
 	}
 	
 	
