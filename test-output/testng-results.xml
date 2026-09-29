@@ -2,46 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-29T14:21:18 GMT+01:00" name="Default suite" finished-at="2026-09-29T14:21:33 GMT+01:00" duration-ms="15067">
+  <suite started-at="2026-09-29T15:47:23 GMT+01:00" name="Default suite" finished-at="2026-09-29T15:47:39 GMT+01:00" duration-ms="16243">
     <groups>
     </groups>
-    <test started-at="2026-09-29T14:21:18 GMT+01:00" name="Default test" finished-at="2026-09-29T14:21:33 GMT+01:00" duration-ms="15067">
-      <class name="tests.TC_04_Créer_un_étudiant">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.TC_04_Créer_un_étudiant@7ec7ffd3]" started-at="2026-09-29T14:21:18 GMT+01:00" name="beforeSuite" finished-at="2026-09-29T14:21:18 GMT+01:00" duration-ms="201" status="PASS">
+    <test started-at="2026-09-29T15:47:23 GMT+01:00" name="Default test" finished-at="2026-09-29T15:47:39 GMT+01:00" duration-ms="16243">
+      <class name="tests.TC_05_Créer_un_enseignant">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.TC_05_Créer_un_enseignant@7ec7ffd3]" started-at="2026-09-29T15:47:22 GMT+01:00" name="beforeSuite" finished-at="2026-09-29T15:47:23 GMT+01:00" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.TC_04_Créer_un_étudiant@7ec7ffd3]" started-at="2026-09-29T14:21:18 GMT+01:00" name="setUp" finished-at="2026-09-29T14:21:23 GMT+01:00" duration-ms="5018" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.TC_05_Créer_un_enseignant@7ec7ffd3]" started-at="2026-09-29T15:47:23 GMT+01:00" name="setUp" finished-at="2026-09-29T15:47:29 GMT+01:00" duration-ms="6405" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.TC_04_Créer_un_étudiant.testerLaCréationDunEtudiant()]]>
+                <![CDATA[public void tests.TC_05_Créer_un_enseignant.testerLaCréationDunEnseignant()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testerLaCréationDunEtudiant()[pri:0, instance:tests.TC_04_Créer_un_étudiant@7ec7ffd3]" started-at="2026-09-29T14:21:23 GMT+01:00" name="testerLaCréationDunEtudiant" finished-at="2026-09-29T14:21:33 GMT+01:00" duration-ms="9815" status="PASS">
+        <test-method signature="testerLaCréationDunEnseignant()[pri:0, instance:tests.TC_05_Créer_un_enseignant@7ec7ffd3]" started-at="2026-09-29T15:47:29 GMT+01:00" name="testerLaCréationDunEnseignant" finished-at="2026-09-29T15:47:39 GMT+01:00" duration-ms="9576" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testerLaCréationDunEtudiant -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TC_04_Créer_un_étudiant@7ec7ffd3]" started-at="2026-09-29T14:21:33 GMT+01:00" name="tearDown" finished-at="2026-09-29T14:21:33 GMT+01:00" duration-ms="208" status="PASS">
+        </test-method> <!-- testerLaCréationDunEnseignant -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TC_05_Créer_un_enseignant@7ec7ffd3]" started-at="2026-09-29T15:47:39 GMT+01:00" name="tearDown" finished-at="2026-09-29T15:47:39 GMT+01:00" duration-ms="221" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testerLaCréationDunEtudiant status=SUCCESS method=TC_04_Créer_un_étudiant.testerLaCréationDunEtudiant()[pri:0, instance:tests.TC_04_Créer_un_étudiant@7ec7ffd3] output={null}]]]>
+                <![CDATA[[TestResult name=testerLaCréationDunEnseignant status=SUCCESS method=TC_05_Créer_un_enseignant.testerLaCréationDunEnseignant()[pri:0, instance:tests.TC_05_Créer_un_enseignant@7ec7ffd3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.TC_04_Créer_un_étudiant@7ec7ffd3]" started-at="2026-09-29T14:21:33 GMT+01:00" name="afterSuite" finished-at="2026-09-29T14:21:33 GMT+01:00" duration-ms="299" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.TC_05_Créer_un_enseignant@7ec7ffd3]" started-at="2026-09-29T15:47:39 GMT+01:00" name="afterSuite" finished-at="2026-09-29T15:47:39 GMT+01:00" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- tests.TC_04_Créer_un_étudiant -->
+      </class> <!-- tests.TC_05_Créer_un_enseignant -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
