@@ -19,6 +19,8 @@ public class DashboardPage {
 	private final By DashboardPageTitle = By.xpath("//h1[normalize-space()='Admin Dashboard']");
 	private final By AcademicYearsMenu = By.xpath("//span[normalize-space()='Academic Years']");
 	private final By TermsMenu = By.xpath("//span[normalize-space()='Terms']");
+	private final By StudentsMenu = By.xpath("//span[normalize-space()='Students']");
+
 
 	
 	
@@ -33,5 +35,9 @@ public class DashboardPage {
 	
 	public void clickOnTermsMenu() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(TermsMenu)).click();
+	}
+	
+	public void clickOnStudentsMenu() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(StudentsMenu)).click();
 	}
 }

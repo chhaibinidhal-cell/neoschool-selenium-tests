@@ -40,7 +40,7 @@ public class TC_03_Créer_un_trimestre extends BaseTest {
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+         //TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		newAcademicYears.clickOnCreateButton();

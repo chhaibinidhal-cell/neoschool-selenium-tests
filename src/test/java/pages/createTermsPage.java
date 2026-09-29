@@ -40,12 +40,7 @@ public class createTermsPage {
 	public void sendDescriptionValue(String descriptionValue) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(descriptionField)).sendKeys(descriptionValue);
 	}
-	
-	//public void chooseStartDate() {
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(startDateField)).click();
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(startDay)).click();
-	//}
-	
+		
 	public void chooseStartDate(String year, String day) {
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(startDateField)).click();
 	    WebElement field = wait.until(ExpectedConditions.visibilityOfElementLocated(yearField));
