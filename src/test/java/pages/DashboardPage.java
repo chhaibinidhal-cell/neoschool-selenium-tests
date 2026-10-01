@@ -21,6 +21,8 @@ public class DashboardPage {
 	private final By TermsMenu = By.xpath("//span[normalize-space()='Terms']");
 	private final By StudentsMenu = By.xpath("//span[normalize-space()='Students']");
 	private final By teachersMenu = By.xpath("//span[normalize-space()='Teachers']");
+	private final By levelsMenu = By.xpath("//span[normalize-space()='Levels']");
+
 
 
 
@@ -45,5 +47,9 @@ public class DashboardPage {
 	
 	public void clickOnTeachersMenu() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(teachersMenu)).click();
+	}
+	
+	public void clickOnLevelsMenu() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(levelsMenu)).click();
 	}
 }
