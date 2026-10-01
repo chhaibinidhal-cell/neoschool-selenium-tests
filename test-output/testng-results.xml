@@ -2,46 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-01T12:02:05 GMT+01:00" name="Default suite" finished-at="2026-10-01T12:02:49 GMT+01:00" duration-ms="43412">
+  <suite started-at="2026-10-01T16:54:35 GMT+01:00" name="Default suite" finished-at="2026-10-01T16:54:43 GMT+01:00" duration-ms="7833">
     <groups>
     </groups>
-    <test started-at="2026-10-01T12:02:05 GMT+01:00" name="Default test" finished-at="2026-10-01T12:02:49 GMT+01:00" duration-ms="43412">
-      <class name="tests.TC_06_Créer_un_niveau">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.TC_06_Créer_un_niveau@7ec7ffd3]" started-at="2026-10-01T12:02:05 GMT+01:00" name="beforeSuite" finished-at="2026-10-01T12:02:05 GMT+01:00" duration-ms="142" status="PASS">
+    <test started-at="2026-10-01T16:54:35 GMT+01:00" name="Default test" finished-at="2026-10-01T16:54:43 GMT+01:00" duration-ms="7833">
+      <class name="tests.TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes@7ec7ffd3]" started-at="2026-10-01T16:54:35 GMT+01:00" name="beforeSuite" finished-at="2026-10-01T16:54:35 GMT+01:00" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.TC_06_Créer_un_niveau@7ec7ffd3]" started-at="2026-10-01T12:02:05 GMT+01:00" name="setUp" finished-at="2026-10-01T12:02:43 GMT+01:00" duration-ms="37881" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes@7ec7ffd3]" started-at="2026-10-01T16:54:35 GMT+01:00" name="setUp" finished-at="2026-10-01T16:54:39 GMT+01:00" duration-ms="3710" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.TC_06_Créer_un_niveau.testerLaCréationDunNiveau()]]>
+                <![CDATA[public void tests.TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes.TesterLaCréationDuneClasseAvecDesInformatiosInvalides()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testerLaCréationDunNiveau()[pri:0, instance:tests.TC_06_Créer_un_niveau@7ec7ffd3]" started-at="2026-10-01T12:02:43 GMT+01:00" name="testerLaCréationDunNiveau" finished-at="2026-10-01T12:02:48 GMT+01:00" duration-ms="5299" status="PASS">
+        <test-method signature="TesterLaCréationDuneClasseAvecDesInformatiosInvalides()[pri:0, instance:tests.TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes@7ec7ffd3]" started-at="2026-10-01T16:54:39 GMT+01:00" name="TesterLaCréationDuneClasseAvecDesInformatiosInvalides" finished-at="2026-10-01T16:54:43 GMT+01:00" duration-ms="3926" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testerLaCréationDunNiveau -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TC_06_Créer_un_niveau@7ec7ffd3]" started-at="2026-10-01T12:02:48 GMT+01:00" name="tearDown" finished-at="2026-10-01T12:02:49 GMT+01:00" duration-ms="198" status="PASS">
+        </test-method> <!-- TesterLaCréationDuneClasseAvecDesInformatiosInvalides -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes@7ec7ffd3]" started-at="2026-10-01T16:54:43 GMT+01:00" name="tearDown" finished-at="2026-10-01T16:54:43 GMT+01:00" duration-ms="176" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testerLaCréationDunNiveau status=SUCCESS method=TC_06_Créer_un_niveau.testerLaCréationDunNiveau()[pri:0, instance:tests.TC_06_Créer_un_niveau@7ec7ffd3] output={null}]]]>
+                <![CDATA[[TestResult name=TesterLaCréationDuneClasseAvecDesInformatiosInvalides status=SUCCESS method=TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes.TesterLaCréationDuneClasseAvecDesInformatiosInvalides()[pri:0, instance:tests.TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes@7ec7ffd3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.TC_06_Créer_un_niveau@7ec7ffd3]" started-at="2026-10-01T12:02:49 GMT+01:00" name="afterSuite" finished-at="2026-10-01T12:02:49 GMT+01:00" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes@7ec7ffd3]" started-at="2026-10-01T16:54:43 GMT+01:00" name="afterSuite" finished-at="2026-10-01T16:54:43 GMT+01:00" duration-ms="154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- tests.TC_06_Créer_un_niveau -->
+      </class> <!-- tests.TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

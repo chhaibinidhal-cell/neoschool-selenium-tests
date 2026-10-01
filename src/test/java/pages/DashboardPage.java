@@ -22,11 +22,8 @@ public class DashboardPage {
 	private final By StudentsMenu = By.xpath("//span[normalize-space()='Students']");
 	private final By teachersMenu = By.xpath("//span[normalize-space()='Teachers']");
 	private final By levelsMenu = By.xpath("//span[normalize-space()='Levels']");
+	private final By classesMenu = By.xpath("//span[normalize-space()='Classes']");
 
-
-
-
-	
 	
 	public boolean isOnDashboard() {
 		String dashboardPageTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(DashboardPageTitle)).getText();
@@ -51,5 +48,9 @@ public class DashboardPage {
 	
 	public void clickOnLevelsMenu() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(levelsMenu)).click();
+	}
+	
+	public void clickOnClassesMenu() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(classesMenu)).click();
 	}
 }
