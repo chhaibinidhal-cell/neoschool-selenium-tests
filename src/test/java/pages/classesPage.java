@@ -1,9 +1,11 @@
 package pages;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -17,6 +19,9 @@ public class classesPage {
 	}
 	
 	private final By newClassesButton = By.xpath("//span[normalize-space()='New Classes']");
+	private final By classesRows = By.xpath("//tr[contains(@class,'fi-ta-row')]");	
+
+
 
 	
 	public boolean isOnClassesPage() {
@@ -28,6 +33,19 @@ public class classesPage {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(newClassesButton)).click();
 	}
 	
+	
+	public boolean isClasseDisplayedInList(String levelName, String classeName) {
+
+	    List<WebElement> rows = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(classesRows));
+
+	    for (WebElement row : rows) {
+	        String rowText = row.getText();
+	        if (rowText.contains(levelName) && rowText.contains(classeName)) {
+	            return true;
+	        }
+	    }
+	    return false;
+	}
 	
 
 }

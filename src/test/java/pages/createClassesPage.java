@@ -1,7 +1,6 @@
 package pages;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +20,7 @@ public class createClassesPage {
 	
 	private final By createClassesPageTitle = By.xpath("//h1[normalize-space()='Create Classes']");
 	private final By nameField = By.xpath("//input[@id='data.name']");
-	private final By createButton = By.xpath("//span[@class='fi-btn-label'][normalize-space()='Create']");
+	private final By createButton =By.xpath("//button[@type='submit'][.//span[normalize-space()='Create']]");	
 	private final By levelField = By.xpath("//select[@id='data.level_id']");
 	private final By levelOption = By.id("data.level_id");
 	private final By errorMessage = By.cssSelector("p[data-validation-error]");
@@ -34,12 +33,22 @@ public class createClassesPage {
 	}
 
 	public void sendNameValue(String nameValue) {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(nameField)).sendKeys(nameValue);
-	}
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(nameField)).sendKeys(nameValue);
+		//public void sendNameValue(String nameValue) {
+
+		    WebElement field = wait.until(ExpectedConditions.visibilityOfElementLocated(nameField));
+
+		    field.clear();
+		    field.sendKeys(nameValue);
+
+		    // Trigger blur
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].blur();", field);
+		}
 	
 	public void clickOnCreateButton() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(createButton)).click();
-	}
+		wait.until(ExpectedConditions.elementToBeClickable(createButton)).click();
+		
+		}
 	
 	public boolean isFirstErrorMessageDisplayed() {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage)).isDisplayed();
@@ -49,9 +58,11 @@ public class createClassesPage {
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(nameField)).clear();
 	}
 	
+	public void clickOnLevelField() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(levelField)).click();
+	}
 	
 	public void selectLevel(String value) {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(levelField)).click();
 	    Select select = new Select(driver.findElement(levelOption));
 	    select.selectByValue(value);
 	}
@@ -62,5 +73,15 @@ public class createClassesPage {
 				nameFieldElement);
 	}
 	
+	public boolean isLevelOptionDisplayed(String levelName) {
+	    Select select = new Select(wait.until(ExpectedConditions.visibilityOfElementLocated(levelOption)));
+	    for (WebElement option : select.getOptions()) {
+	        if (option.getText().trim().equals(levelName)) {
+	            return true;
+	        }
+	    }
+	    return false;
+	}
 	
+		
 }

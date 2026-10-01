@@ -7,17 +7,23 @@ import base.BaseTest;
 import pages.DashboardPage;
 import pages.classesPage;
 import pages.createClassesPage;
+import pages.createdClassePage;
 import pages.loginPage;
 
-public class TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes extends BaseTest {
+public class TC_08_Créer_une_classe_avec_des_informations_valides extends BaseTest {
 	
 	@Test
-	public void TesterLaCréationDuneClasseAvecDesInformatiosInvalides() {
+	
+	public void TesterLaCréationDuneClasseAvecDesInformationsValides() {
+		
 		loginPage login = new loginPage(driver);
 		DashboardPage dashboard = new DashboardPage(driver);
 		classesPage classes = new classesPage(driver);
 		createClassesPage createClasses = new createClassesPage(driver);
-		test=extent.createTest("TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes");
+		createdClassePage createdClasse = new createdClassePage(driver);
+
+		test=extent.createTest("TC_08_Créer_Une_Classe_Avec_Des_Informations_Valides");
+		
 		
 		test.info("Se connecter");
 	    login.sendSchoolCode("neoschool");
@@ -39,33 +45,36 @@ public class TC_07_Créer_Une_Classe_Avec_Des_Informations_Incomplètes extends 
 	    boolean isOnCreateClassesResult = createClasses.isOnCreateClassesPage();
 	    Assert.assertTrue(isOnCreateClassesResult, "La page Create Classes doit ètre affichée");
 	    
-	    test.info("saisir un nom");
-	    String nameValue = "Classes A";
-	    createClasses.sendNameValue(nameValue);
-	    
-	    test.info("cliquer sur le bouton Create");
-	    createClasses.clickOnCreateButton();
-	    
-	    test.info("Vérifier l'affichage du message d'erreur");
-	    boolean isFirstErrorMessageDisplayedResult = createClasses.isFirstErrorMessageDisplayed();
-	    Assert.assertTrue(isFirstErrorMessageDisplayedResult, "Le message d'erreur doit ètre affiché");
-	    
-	    test.info("vider le champ Name");
-	    createClasses.clearNameField();
-	    
 	    test.info("cliquer sur le champ des niveaux");
 	    createClasses.clickOnLevelField();
+	    
+	    test.info("Vérifier que Le niveau qui a été crée dans le TC-06 s'affiche 'Niveau 1'");
+	    String levelName = "Niveau 1";
+	    boolean isLevelDisplayedResult = createClasses.isLevelOptionDisplayed(levelName);
+	    Assert.assertTrue(isLevelDisplayedResult, "Le niveau qui a été crée dans le TC-06 'Niveau 1' doit s'afficher");
 	    
 	    test.info("Sélectionner un niveau");
 	    String levelValue = "121";
 	    createClasses.selectLevel(levelValue);
 	    
+	    test.info("saisir un nom");
+	    String classeName = "Classes D";
+	    createClasses.sendNameValue(classeName);
+	    	    
 	    test.info("cliquer sur le bouton Create");
 	    createClasses.clickOnCreateButton();
 	    
-	    test.info("Vérifier l'affichage du message d'erreur");
-	    boolean isSecondErrorMessageDisplayedResult = createClasses.isSecondErrorMessageDisplayed();
-	    Assert.assertTrue(isSecondErrorMessageDisplayedResult, "Le message d'erreur doit ètre affiché");
+	    test.info("Vérifier l'affichage du message de confirmation");
+	    boolean isCofirmationMessageDisplayedResult = createdClasse.isCreateMessageDisplayed();
+	    Assert.assertTrue(isCofirmationMessageDisplayedResult, "le message de confirmation de création doit ètre affiché");
+	    
+	    test.info("cliquer sur Classes");
+	    createdClasse.clickOnClassesMenu();
+	    
+	    test.info("Vérifier que la classe apparait dans la liste");
+	    boolean isClasseOnListResult = classes.isClasseDisplayedInList(levelName, classeName);
+	    Assert.assertTrue(isClasseOnListResult, "la classe doit apparaitre dans la liste");
+	    
 	    
 	}
 
